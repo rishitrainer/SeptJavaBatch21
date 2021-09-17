@@ -4,6 +4,13 @@ public class StoreEmployee extends Employee implements Reachable, Cloneable{
 
 	public StoreEmployee() {
 		System.out.println(country_code);
+		
+	}
+	
+	@Override
+	public void testDefaultmethod() {
+		// TODO Auto-generated method stub
+		Reachable.super.testDefaultmethod();
 	}
 	
 	@Override
@@ -23,6 +30,12 @@ public class StoreEmployee extends Employee implements Reachable, Cloneable{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	/*
+	@Override
+	public void salaryCalculations() {
+		// TODO Auto-generated method stub
+		super.salaryCalculations();
+	}*/
 
 	@Override
 	public int compareTo(Employee o) {

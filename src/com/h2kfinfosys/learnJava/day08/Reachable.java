@@ -11,5 +11,14 @@ public interface Reachable extends Serializable, Comparable<Employee> {
 	boolean validateAddress(String address);
 	boolean validateEmail(String email);
 	
+	private void testThisMethod() {
+		System.out.println("This kind of methods are now allowed");
+	}
+	// default is for default implementation of method and not as package access
+	default void testDefaultmethod() {
+		testThisMethod();
+		System.out.println("This is Default Logic for test method");
+	}
+	
 	
 }
